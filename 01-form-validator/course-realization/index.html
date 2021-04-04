@@ -2,10 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form Validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Form Validator</title>
 </head>
 <body>
+    <div class="container">
+        <form id="form"
+              class="form">
+            <h2>Register With Us</h2>
+
+            <div class="form-control success">
+                <label for="username">Username</label>
+                <input id="username"
+                       type="text"
+                       placeholder="Enter username">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control error">
+                <label for="email">Email</label>
+                <input id="email"
+                       type="text"
+                       placeholder="Enter email">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input id="password"
+                       type="text"
+                       placeholder="Enter password">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="password2">Confirm Password</label>
+                <input id="password2"
+                       type="text"
+                       placeholder="Enter password again">
+                <small>Error message</small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
